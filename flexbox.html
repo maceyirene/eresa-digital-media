@@ -6,36 +6,49 @@
 <title>my flexbox page</title>
 <style>
 html{
-  box-sizing:border-box;
+box-sizing:border-box;
 }
 
 *,
 *::before,
 *::after{
-  box-sizing:inherit;
+box-sizing:inherit;
 }
 
 #box1 {
-background: orange;
-display: flex;
+background:orange;
+display:flex;
+flex-direction:row-reverse;
+}
+
+#box2 {
+background:orange;
+display:flex;
+
+}
+
+#box3 {
+background:orange;
+display:flex;
+flex-direction:row-reverse;
 }
 
 .pink{
-background: pink;
-width: 150px;
-height: 150px;
+background:pink;
+width:150px;
+height:150px;
 }
 
 .lightblue{
-background: lightblue;
-width: 150px;
-height: 150px;
+background:lightblue;
+width:150px;
+height:150px;
 }
 
 .green{
-background: green;
-width: 150px;
-height: 150px;
+background:green;
+width:150px;
+height:150px;
 }
 
 </style>
@@ -43,6 +56,18 @@ height: 150px;
 
 <body>
 <div id="box1">
+<div class="pink"></div>
+<div class="lightblue"></div>
+<div class="green"></div>
+</div>
+
+<div id="box2">
+<div class="pink"></div>
+<div class="lightblue"></div>
+<div class="green"></div>
+</div>
+
+<div id="box3">
 <div class="pink"></div>
 <div class="lightblue"></div>
 <div class="green"></div>
