@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>my boxes page</title>
+<style>
+html{
+  box-sizing:border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing:inherit;
+}
+
+.container {  display: grid;
+  grid-template-columns: 300px 3fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Header Header Header"
+    "side-left center side-right"
+    "big-left big-left .";
+}
+
+.Header {
+grid-area: Header;
+background: pink;
+}
+
+.side-left { grid-area: side-left; }
+
+.center { grid-area: center; }
+
+.side-right { grid-area: side-right; }
+
+.big-left { grid-area: big-left; }
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="Header"><h1>css grid</h1>
+</div>
+
+
+<div class="side-left"></div>
+<div class="center"></div>
+<div class="side-right"></div>
+<div class="big-left"></div>
+</div>
+</body>
+
+</html>
