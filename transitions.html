@@ -23,7 +23,7 @@
 
     h1{
     color:pink;
-    font-size:2rem;
+    font-size:3rem;
     text-shadow:0px 0px transparent;
     transition:color 1s, font-size .5s, tex-shadow .5s;
     }
@@ -34,17 +34,30 @@
     text-shadow:3px 3px 50px blue;
     }
 
+    h2 {
+    color: lightgreen;
+    font-size: 2rem;
+    text-shadow: 0px 0px transparent;
+    transition: color 2s, font-size .5s;
+    }
+
+    h2:hover{
+      color: red;
+      font-size:3.5rem;
+      transition:color 2s, font-size .5s;
+    }
+
     #box1 {
     background: yellow;
     height: 200px;
     width: 200px
     border-radius: 50%;
-    display: felx;
+    display: flex;
     justify-content: center;
     align-items: center;
-    color: green;
+    color: red;
     border: 15px white;
-    transition: background 1s, border 1s, border-radius .5s;
+    transition: background 1s, border 2s, border-radius 1s;
     }
 
     #box1:hover {
@@ -52,32 +65,62 @@
     border-radius: 50%;
     }
 
-    #box2 {}
+    #box2 {
+    background: purple;
+    height: 100px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    border: 15px white;
+    transition: background 1s, border 1s, border-radius .5s, height 2s, width 1s;
+  }
 
-    #box2:hover {}
+    #box2:hover {
+      height: 300px;
+      width: 400px;
+      background: pink;
+      border-radius: 20%;
+    }
 
-    #box3 {}
+    #box3 {
+    background: lightblue;
+    height: 100px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: 15px white;
+    transition: background 1s, border 1s, border-radius .5s, height 2s, width 1s;
+  }
 
-    #box3:hover {}
+    #box3:hover {
+      height: 100px;
+      width: 50px;
+      background: lightgreen;
+      border-radius: 10%;
+    }
   </style>
 </head>
 
 <body>
   <h1>Amazing Transforming Text</h1>
-  <p>
-    examples of cool hover transforms and transitions
-  </p>
+  <h2>Hover Transition Examples</h2>
 
   <div id="box1">
-    <p>transform</p>
+    <p>Bumblebee</p>
   </div>
   <br>
   <div id="box2">
-    <p>transform</p>
+    <p>Grape</p>
   </div>
 
   <div id="box3">
-    <p>transform</p>
+    <p>Wing</p>
   </div>
 
 
