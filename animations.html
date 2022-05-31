@@ -45,22 +45,40 @@
   animation-name: spinny;
   animation-iteration-count: infinite;
   animation-duration: 3s;
+  animation-direction: alternate;
 }
 
   @keyframes spinny {
     0%   {background-color: lightgreen; transform: rotate(0deg);}
     33%  {background-color: lightpink;}
-    66%  {background-color: lightpurple;}
+    66%  {background-color: purple;}
     100% {background-color: lightgreen;transform: rotate(360deg);}
   }
 
     #box2 {
-  animation-name: pulse
-  transform
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-direction: alternate;
+    }
+    @keyframes pulse {
+      0%   {background-color: lightpink; transform: scale(1);}
+      100% {background-color: purple;transform: scale(1.5);}
     }
 
+    #box3 {
+        animation-name: random;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
 
-    #box3 {}
+      @keyframes random {
+  0% {
+    background-color: lightgreen;
+    transform: scale(2) rotate(360deg);
+  }
+
   </style>
 </head>
 
